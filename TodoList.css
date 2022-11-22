@@ -1,0 +1,57 @@
+fieldset{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .color-changer{
+    display: flex;
+    gap:20px;
+    padding: 10px;
+    width: fit-content;
+    margin-inline:auto;
+  }
+  input[type = "radio"]{
+    /* appearance: none; */
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid;
+    border-radius: 50%;
+  }
+  input[type = "radio"]:checked{
+    background-color: var(--radio-color);
+  }
+  .changer{
+    border: none;
+  }
+  #light{
+    --radio-color:rgb(205,183,187);
+  }
+  #dark{
+    --radio-color:rgb(32,42,68);
+  }
+  /* #BabyPink{
+    --radio-color:rgb(242,172,185);
+  } */
+  :root:has(#light:checked)
+  {
+    background-color: rgba(229, 219, 221, 0.896);
+  }
+  :root:has(#dark:checked)
+  {
+    background-color: rgb(18, 20, 25);
+  }
+  :root:has(#BabyPink:checked)
+  {
+    background-color: rgb(242,172,185);
+  }
+  :root:has(#blue:checked)
+  {
+    background-color: rgb(20, 38, 207);
+  }
+  :root:has(#orange:checked)
+  {
+    background-color: rgb(233, 135, 15);
+  }
